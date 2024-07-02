@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__top">
+                <div class="header__top-content">
+                    <h1 class="header__top-title">Location</h1>
+                    <address class="header__top-address">70 Kênh nước đen</address>
+                </div>
+                <a href="#" class="header__top-user">
+                    <img src="assets/img/unnamed.jpg" alt="" class="img-user img-cover">
+                </a>
+            </div>
+            <div class="header__bottom">
+                <div class="header__bottom-search">
+                    <input type="text" placeholder="Search coffee" class="input-field">
+                    <div class="header__bottom-icon--search">
+                        <i class="ri-search-line"></i>
+                    </div>
+                    <div class="header__bottom-icon--filter">
+                        <button class="button-filter">
+                            <i class="icon-filter ri-equalizer-line"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <div class="main">
+        <div class="container">
+
+            <!-- Slider -->
+            <section class="slider section">
+                <div class="slider__box">
+                    <ul class="slider__list">
+                        <li class="slider__item">
+                            <a href="#" class="slider__links">
+                                <div class="slider__bg">
+                                    <img src="assets/img/slider-1.jpeg" alt="" class="img-cover">
+                                    <p class="slider__bg-text">Buy one get <br> one FREE</p>
+                                    <div class="slider__bg-promo">Promo</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Menu -->
+            <section class="menu section">
+                <div class="menu__box">
+                    <ul class="menu__classify-list">
+                        <li class="menu__classify-item">
+                            <button class="tablinks menu__classify-links active" onclick="openCity(event, 'AllCoffee')" id="defaultOpen">All Coffee</button>
+                        </li>
+                        <li class="menu__classify-item">
+                            <button class="tablinks menu__classify-links" onclick="openCity(event, 'Cappuccino')">Cappuccino</button>
+                        </li>
+                        <li class="menu__classify-item">
+                            <button class="tablinks menu__classify-links" onclick="openCity(event, 'Machiato')">Machiato</button>
+                        </li>
+                        <li class="menu__classify-item">
+                            <button class="tablinks menu__classify-links" onclick="openCity(event, 'Mocha')">Mocha</button>
+                        </li>
+                        <li class="menu__classify-item">
+                            <button class="tablinks menu__classify-links" onclick="openCity(event, 'KopiLuwak')">Kopi Luwak</button>
+                        </li>
+                    </ul>
+                    <div id="AllCoffee" class="tabcontent">
+                        <ul class="grid column menu-list">
+                            <li class="menu-item">
+                                <div class="menu-bg">
+                                    <div class="menu-por">
+                                        <img src="assets/img/menu-1.png" alt="menu-1" class="img-cover">
+                                        <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.6</div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <h1 class="menu-name">Cappuccino</h1>
+                                        <p class="menu-text">With Chocolate, Milk</p>
+                                        <div class="price">
+                                            <span class="menu-price">50.000Đ</span>
+                                            <span class="menu-price--old">65.000Đ</span>
+                                        </div>
+                                        <div class="menu-group--btn">
+                                            <button class="btn">Buy</button>
+                                            <div class="btn-cart">
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <div class="menu-bg">
+                                    <div class="menu-por">
+                                        <img src="assets/img/menu-2.jpg" alt="menu-2" class="img-cover">
+                                        <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.8</div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <h1 class="menu-name">Black Coffee</h1>
+                                        <p class="menu-text">With Chocolate</p>
+                                        <div class="price">
+                                            <span class="menu-price">40.000Đ</span>
+                                            <span class="menu-price--old">50.000Đ</span>
+                                        </div>
+                                        <div class="menu-group--btn">
+                                            <button class="btn">Buy</button>
+                                            <div class="btn-cart">
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-3.png" alt="menu-3" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.8</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Machiato Machiato</h1>
+                                            <p class="menu-text">With Chocolate, Chocolate</p>
+                                            <div class="price">
+                                                <span class="menu-price">55.000Đ</span>
+                                                <span class="menu-price--old">60.000Đ</span>
+                                            </div>
+                                            <div class="menu-group--btn">
+                                                <button class="btn">Buy</button>
+                                                <div class="btn-cart">
+                                                    <button class="btn-2">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-4.png" alt="menu-4" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>3.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Latte</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="price">
+                                                <span class="menu-price">45.000Đ</span>
+                                                <span class="menu-price--old">50.000Đ</span>
+                                            </div>
+                                            <div class="menu-group--btn">
+                                                <button class="btn">Buy</button>
+                                                <div class="btn-cart">
+                                                    <button class="btn-2">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-5.png" alt="menu-5" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>5.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Cappuccino</h1>
+                                            <p class="menu-text">With Chocolate, Milk, cake</p>
+                                            <div class="price">
+                                                <span class="menu-price">80.000Đ</span>
+                                                <span class="menu-price--old">100.000Đ</span>
+                                            </div>
+                                            <div class="menu-group--btn">
+                                                <button class="btn">Buy</button>
+                                                <div class="btn-cart">
+                                                    <button class="btn-2">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-6.png" alt="menu-6" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Mocha</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="price">
+                                                <span class="menu-price">40.000Đ</span>
+                                                <span class="menu-price--old">45.000Đ</span>
+                                            </div>
+                                            <div class="menu-group--btn">
+                                                <button class="btn">Buy</button>
+                                                <div class="btn-cart">
+                                                    <button class="btn-2">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                        </ul>
+
+                    </div>
+
+                    <div id="Cappuccino" class="tabcontent">
+                        <ul class="grid column menu-list">
+                            <li class="menu-item">
+                                <div class="menu-bg">
+                                    <div class="menu-por">
+                                        <img src="assets/img/menu-2.jpg" alt="menu-2" class="img-cover">
+                                        <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.8</div>
+                                    </div>
+                                    <div class="menu-content">
+                                        <h1 class="menu-name">Black Coffee</h1>
+                                        <p class="menu-text">With Chocolate</p>
+                                        <div class="price">
+                                            <span class="menu-price">40.000Đ</span>
+                                            <span class="menu-price--old">50.000Đ</span>
+                                        </div>
+                                        <div class="menu-group--btn">
+                                            <button class="btn">Buy</button>
+                                            <div class="btn-cart">
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-3.png" alt="menu-3" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.8</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Machiato Machiato</h1>
+                                            <p class="menu-text">With Chocolate, Chocolate</p>
+                                            <div class="price">
+                                                <span class="menu-price">55.000Đ</span>
+                                                <span class="menu-price--old">60.000Đ</span>
+                                            </div>
+                                            <div class="menu-group--btn">
+                                                <button class="btn">Buy</button>
+                                                <div class="btn-cart">
+                                                    <button class="btn-2">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-4.png" alt="menu-4" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>3.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Latte</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="price">
+                                                <span class="menu-price">45.000Đ</span>
+                                                <span class="menu-price--old">50.000Đ</span>
+                                            </div>
+                                            <div class="menu-group--btn">
+                                                <button class="btn">Buy</button>
+                                                <div class="btn-cart">
+                                                    <button class="btn-2">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-5.png" alt="menu-5" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>5.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Cappuccino</h1>
+                                            <p class="menu-text">With Chocolate, Milk, cake</p>
+                                            <div class="price">
+                                                <span class="menu-price">80.000Đ</span>
+                                                <span class="menu-price--old">100.000Đ</span>
+                                            </div>
+                                            <div class="menu-group--btn">
+                                                <button class="btn">Buy</button>
+                                                <div class="btn-cart">
+                                                    <button class="btn-2">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-6.png" alt="menu-6" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Mocha</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="price">
+                                                <span class="menu-price">40.000Đ</span>
+                                                <span class="menu-price--old">45.000Đ</span>
+                                            </div>
+                                            <div class="menu-group--btn">
+                                                <button class="btn">Buy</button>
+                                                <div class="btn-cart">
+                                                    <button class="btn-2">+</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li> 
+                        </ul>
+                    </div>
+
+                    <div id="Machiato" class="tabcontent">
+                        <ul class="grid column menu-list">
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-3.png" alt="menu-3" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.8</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Machiato Machiato</h1>
+                                            <p class="menu-text">With Chocolate, Chocolate</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">55.000Đ</span>
+                                                    <span class="menu-price--old">60.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-4.png" alt="menu-4" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>3.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Latte</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">45.000Đ</span>
+                                                    <span class="menu-price--old">50.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-5.png" alt="menu-5" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>5.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Cappuccino</h1>
+                                            <p class="menu-text">With Chocolate, Milk, cake</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">80.000Đ</span>
+                                                    <span class="menu-price--old">100.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-6.png" alt="menu-6" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Mocha</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">40.000Đ</span>
+                                                    <span class="menu-price--old">45.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="Mocha" class="tabcontent">
+                        <ul class="grid column menu-list">
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-4.png" alt="menu-4" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>3.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Latte</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">45.000Đ</span>
+                                                    <span class="menu-price--old">50.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-5.png" alt="menu-5" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>5.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Cappuccino</h1>
+                                            <p class="menu-text">With Chocolate, Milk, cake</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">80.000Đ</span>
+                                                    <span class="menu-price--old">100.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-6.png" alt="menu-6" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Mocha</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">40.000Đ</span>
+                                                    <span class="menu-price--old">45.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="KopiLuwak" class="tabcontent">
+                        <ul class="grid column menu-list">
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-5.png" alt="menu-5" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>5.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Cappuccino</h1>
+                                            <p class="menu-text">With Chocolate, Milk, cake</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">80.000Đ</span>
+                                                    <span class="menu-price--old">100.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-links">
+                                    <div class="menu-bg">
+                                        <div class="menu-por">
+                                            <img src="assets/img/menu-6.png" alt="menu-6" class="img-cover">
+                                            <div class="menu-evaluate"><i class="icon-star ri-star-fill"></i>4.0</div>
+                                        </div>
+                                        <div class="menu-content">
+                                            <h1 class="menu-name">Mocha</h1>
+                                            <p class="menu-text">With Chocolate, Milk</p>
+                                            <div class="menu-wrapper">
+                                                <div class="">
+                                                    <span class="menu-price">40.000Đ</span>
+                                                    <span class="menu-price--old">45.000Đ</span>
+                                                </div>
+                                                <button class="btn-2">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+ 
+                </div>
+            </section>
+
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="" class="navbar-links active hover-underline">
+                            <i class="navbar-icon ri-home-4-fill"></i>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="" class="navbar-links hover-underline">
+                            <i class="navbar-icon ri-heart-fill"></i>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="cart.html" class="navbar-links hover-underline">
+                            <i class="navbar-icon ri-shopping-cart-2-fill"></i>
+                            <span class="navbar-cart--quantity">0</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item">
+                        <button class="tablinks menu__classify-links navbar-links active hover-underline" onclick="openCity(event, 'cart')" id="defaultOpen"><i class="navbar-icon ri-notification-3-fill"></i></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+<script src="assets/js/index.js"></script>
+</html>
